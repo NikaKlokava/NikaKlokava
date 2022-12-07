@@ -22,18 +22,19 @@ html {
 /********************************** summary ***************************/
 header {
   grid-area: header;
-  background-color: #006C84;
+  background-color: #006c84c1;
 }
 
 aside {
   grid-area: aside;
-  background-color: white;
+  background-color: #accdd253;
 }
 
 main {
   grid-area: main;
-  background-color: #FFCCBB;
+  background-color: white;
   min-height: 1000px;
+  padding-left: 30px;
 }
 
 footer {
@@ -41,7 +42,16 @@ footer {
   grid-area: footer;
   background-color: #6EB5C0;
 }
-
+@media (max-width: 420px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "aside aside"
+      "main main"
+      "footer footer";
+  }
+}
 /*************************** common styles *****************************************/
 h1,
 h2 {
@@ -148,4 +158,19 @@ aside .about-me li {
 }
 aside .about-me img {
   margin-right: 15px;
+}
+/*********************************** main *************************/
+main .profile > h1 {
+  font-size: 30px;
+  color: #00596d;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 50px;
+  border-bottom: 5px solid #00596d;
+}
+main .profile > h3 {
+  font-size: 18px;
+  color: #00596d;
+  line-height: 30px;
+  margin: 0px;
 }
