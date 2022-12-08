@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="eng">
-
 <head>
   <meta charset="UTF-8">
   <title>My CV</title>
@@ -13,7 +12,6 @@
   <link rel="icon" href="assets/ico/my_photo.ico">
   <meta name="viewport" content="width=device-width">
 </head>
-
 <body>
   <div class="grid">
     <header>
@@ -22,14 +20,14 @@
           <li><a href="#contacts">Contacts</a></li>
           <li><a href="#qualities">Qualities</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#codes">Codes</a></li>
+          <li><a href="#code">Code</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#education">Education</a></li>
           <li><a href="#languages">Languages</a></li>
         </ul>
       </nav>
     </header>
-    <aside class="flex-column">
+    <aside>
       <section class="profile-photo flex-column">
         <img src="assets/img/my_photo.jpg" alt="my_photo">
       </section>
@@ -81,44 +79,32 @@
       </section>
       <section class="skills" id="skills">
         <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>
-            <div class="slider">
-              <div class="level level-html"></div>
-            </div>
-          </li>
-          <li>CSS/SCSS</li>
-          <li>
-            <div class="slider">
-              <div class="level level-css"></div>
-            </div>
-          </li>
-          <li>JavaScript</li>
-          <li>
-            <div class="slider">
-              <div class="level level-js"></div>
-            </div>
-          </li>
-          <li>Git/GitHub</li>
-          <li>
-            <div class="slider">
-              <div class="level level-git"></div>
-            </div>
-          </li>
-          <li>Figma designs</li>
-          <li>
-            <div class="slider">
-              <div class="level level-figma"></div>
-            </div>
-          </li>
-          <li>Trello for managing tasks</li>
-          <li>
-            <div class="slider">
-              <div class="level level-trello"></div>
-            </div>
-          </li>
-        </ul>
+        <div class="skills-grid">
+          <p>HTML</p>
+          <div class="slider">
+            <div class="level level-html"></div>
+          </div>
+          <p>CSS/SCSS</p>
+          <div class="slider">
+            <div class="level level-css"></div>
+          </div>
+          <p>JavaScript</p>
+          <div class="slider">
+            <div class="level level-js"></div>
+          </div>
+          <p>Git/GitHub</p>
+          <div class="slider">
+            <div class="level level-git"></div>
+          </div>
+          <p>Figma designs</p>
+          <div class="slider">
+            <div class="level level-figma"></div>
+          </div>
+          <p>Trello for managing tasks</p>
+          <div class="slider">
+            <div class="level level-trello"></div>
+          </div>
+        </div>
       </section>
       <section class="projects" id="projects">
         <h2>Projects</h2>
@@ -129,36 +115,73 @@
           </li>
         </ul>
       </section>
-      <section class="codes" id="codes">
+      <section class="code" id="code">
         <h2>Code</h2>
+        <p><code>
+            function filterArray(array, a, b) {<br>
+            return arr.filter(item => (item >= a && item <=b));<br>
+              }<br>
+              let array = [5, 3, 8, 1];<br>
+              let filtered = filterRange(array, 1, 4);<br>
+              alert(filtered);</code></p>
       </section>
       <section class="education" id="education">
         <h2>Education</h2>
-        
-        <!-- <ul>
-          <li class="flex-row">
+        <div class="education-conteiner">
+          <div class="flex-row">
             <img class="icons" src="assets/svg/education.svg" alt="education">
-            <a href="http://www.grsmu.by/" class="web-zoo">GrSMU</a>
-          </li>
-        </ul> -->
+            <a href="http://www.grsmu.by/" class="web-zoo">Grodno State Medical University</a>
+          </div>
+          <p>2015 - 2021</p>
+          <p>Oncologist-surgeon</p>
+        </div>
       </section>
       <section class="languages" id="languages">
         <h2>Languages</h2>
-        <ul>
-          <li>English</li>
-          <li>Russian</li>
-          <li>Polish</li>
-        </ul>
+        <div class="languages-conteiner">
+          <p>English: B2 (Upper intermediate)</p>
+          <div class="english flex-row">
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+          </div>
+          <p>Russian: C2 (Advanced)</p>
+          <div class="russian flex-row">
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+          </div>
+          <p>Polish: A2 (Elementary)</p>
+          <div class="polish flex-row">
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+            <div class="ellipse"></div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <ul>
-        <li>GitHub</li>
-        <li>Year</li>
-        <li>Logo</li>
+      <ul class="footer flex-row">
+        <li class="flex-row">
+          <img class="icons" src="assets/svg/github.svg" alt="github">
+          <a href="https://github.com/NikaKlokava" class="github">GitHub</a>
+        </li>
+        <li>
+          <a href="https://rs.school/js-stage0/"><img class="rsschool" src="assets/ico/rs_school_js.ico"
+              alt="rsschool"></a>
+        </li>
+        <li>2022</li>
       </ul>
     </footer>
   </div>
 </body>
-
 </html>

@@ -28,18 +28,17 @@ header {
 aside {
   grid-area: aside;
   background-color: #accdd253;
+  padding-top: 20px;
 }
 
 main {
   grid-area: main;
   background-color: white;
-  min-height: 1000px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0px 50px 50px 50px;
 }
 
 footer {
-  min-height: 200px;
+  /* min-height: 200px; */
   grid-area: footer;
   background-color: #6EB5C0;
 }
@@ -52,6 +51,10 @@ footer {
       "aside aside"
       "main main"
       "footer footer";
+  }
+
+  main {
+    padding: 0px 20px 20px 20px;
   }
 }
 
@@ -80,12 +83,24 @@ ul {
   list-style: none;
 }
 
-a {
+li {
+  font-size: 18px;
+  font-family: 'Alegreya', sans-serif;
+  color: #00596d;
+  line-height: 30px;
+}
+
+a,
+p {
   font-family: 'Alegreya', sans-serif;
   text-decoration: none;
   font-size: 18px;
   color: #006C84;
   margin-left: 10px;
+}
+
+p {
+  margin: 0px;
 }
 
 a:hover {
@@ -113,10 +128,10 @@ a:hover {
 }
 
 .ellipse {
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   background-color: #006C84;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .flex-column {
@@ -162,15 +177,8 @@ aside h2 {
   margin-bottom: 30px;
 }
 
-.contacts li {
-  margin-left: 20px;
-}
-
+.contacts li,
 .about-me li {
-  font-size: 18px;
-  font-family: 'Alegreya', sans-serif;
-  color: #00596d;
-  line-height: 30px;
   margin-left: 20px;
 }
 
@@ -198,7 +206,7 @@ aside h2 {
   border-bottom: 1px solid #00596d;
 }
 
-.skills ul {
+.skills .skills-grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
@@ -207,7 +215,7 @@ aside h2 {
 }
 
 @media (max-width: 420px) {
-  .skills ul {
+  .skills .skills-grid {
     grid-template-columns: 1fr;
     row-gap: 10px;
   }
@@ -233,7 +241,47 @@ aside h2 {
 
 .skills,
 .projects,
+.code,
 .education {
   padding-bottom: 20px;
   border-bottom: 1px solid #00596d;
+}
+
+.code>p {
+  background-color: #accdd253;
+  text-shadow: 1px 4px 2px #FFCCBB;
+}
+
+.languages-conteiner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 420px) {
+  .languages-conteiner {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+
+.english .ellipse:nth-child(5),
+.english .ellipse:nth-child(6),
+.polish .ellipse:nth-child(3),
+.polish .ellipse:nth-child(4),
+.polish .ellipse:nth-child(5),
+.polish .ellipse:nth-child(6) {
+  background-color: #accdd253;
+}
+
+/*************************** footer **********************/
+.footer {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer .rsschool {
+  width: 60px;
+  height: 30px;
 }
