@@ -18,7 +18,7 @@
   <div class="grid">
     <header>
       <nav>
-        <ul>
+        <ul class="flex-row">
           <li><a href="#contacts">Contacts</a></li>
           <li><a href="#qualities">Qualities</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -29,45 +29,48 @@
         </ul>
       </nav>
     </header>
-    <aside>
-      <section class="profile-photo">
+    <aside class="flex-column">
+      <section class="profile-photo flex-column">
         <img src="assets/img/my_photo.jpg" alt="my_photo">
       </section>
-      <section class="contacts" id="contacts">
+      <section class="contacts flex-column" id="contacts">
         <h2>Contacts</h2>
         <ul>
-          <li>
+          <li class="flex-row">
             <img class="icons" src="assets/svg/location.svg" alt="location">
             <a href="https://goo.gl/maps/PiHD5JsdLCuJsbs38" class="location">Belarus, Hrodna</a>
           </li>
-          <li>
+          <li class="flex-row">
             <img class="icons" src="assets/svg/email.svg" alt="email">
             <a href="mailto:veronika.kazakevich1997@gmail.com" class="email">veronika.kazakevich</a>
           </li>
-          <li>
+          <li class="flex-row">
             <img class="icons" src="assets/svg/github.svg" alt="github">
             <a href="https://github.com/NikaKlokava" class="github">github.com/NikaKlokava</a>
           </li>
-          <li>
+          <li class="flex-row">
             <img class="icons" src="assets/svg/telegram.svg" alt="telegram">
             <a href="https://t.me/nikageor" class="telegram">t.me/nikageor</a>
           </li>
-          <li>
+          <li class="flex-row">
             <img class="icons" src="assets/svg/instagram.svg" alt="instagram">
             <a href="https://www.instagram.com/nika_klokava" class="instagram">inst/nika_klokava</a>
           </li>
         </ul>
       </section>
-      <section class="about-me" id="qualities">
-        <h2>Personal qualities</h2>
+      <section class="about-me flex-column" id="qualities">
+        <h2>About Me</h2>
         <ul>
-          <li><img class="icons" src="assets/svg/okey.svg" alt="okey">Responsible and disciplined;</li>
-          <li><img class="icons" src="assets/svg/okey.svg" alt="okey">Diligent at work;</li>
-          <li><img class="icons" src="assets/svg/okey.svg" alt="okey">Sociable and open for contact;</li>
-          <li><img class="icons" src="assets/svg/okey.svg" alt="okey">Have a good leadership qualities;</li>
-          <li><img class="icons" src="assets/svg/okey.svg" alt="okey">Able to work in a team;</li>
-          <li><img class="icons" src="assets/svg/okey.svg" alt="okey">Quickly complete tasks;</li>
-          <li><img class="icons" src="assets/svg/okey.svg" alt="okey">Always interested in gaining new knowledge;</li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">Responsible and disciplined;</li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">Diligent at work;</li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">Sociable and open for contact;
+          </li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">Have a good leadership qualities;
+          </li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">Able to work in a team;</li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">Quickly complete tasks;</li>
+          <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">Always interested in gaining new
+            knowledge;</li>
         </ul>
       </section>
     </aside>
@@ -79,26 +82,65 @@
       <section class="skills" id="skills">
         <h2>Skills</h2>
         <ul>
-          <li>Programming languages (HTML/CSS/JavaScript)</li>
-          <li>Git for developing production-like projects</li>
+          <li>HTML</li>
+          <li>
+            <div class="slider">
+              <div class="level level-html"></div>
+            </div>
+          </li>
+          <li>CSS/SCSS</li>
+          <li>
+            <div class="slider">
+              <div class="level level-css"></div>
+            </div>
+          </li>
+          <li>JavaScript</li>
+          <li>
+            <div class="slider">
+              <div class="level level-js"></div>
+            </div>
+          </li>
+          <li>Git/GitHub</li>
+          <li>
+            <div class="slider">
+              <div class="level level-git"></div>
+            </div>
+          </li>
           <li>Figma designs</li>
+          <li>
+            <div class="slider">
+              <div class="level level-figma"></div>
+            </div>
+          </li>
           <li>Trello for managing tasks</li>
+          <li>
+            <div class="slider">
+              <div class="level level-trello"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li class="flex-row">
+            <img class="icons" src="assets/svg/panda.svg" alt="panda">
+            <a href="https://nikaklokava.github.io/html-css-online-zoo-website/" class="web-zoo">My web-zoo</a>
+          </li>
         </ul>
       </section>
       <section class="codes" id="codes">
         <h2>Code</h2>
       </section>
-      <section class="projects" id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul></section>
       <section class="education" id="education">
         <h2>Education</h2>
-        <ul>
-          <li>GrSMU</li>
-        </ul>
+        
+        <!-- <ul>
+          <li class="flex-row">
+            <img class="icons" src="assets/svg/education.svg" alt="education">
+            <a href="http://www.grsmu.by/" class="web-zoo">GrSMU</a>
+          </li>
+        </ul> -->
       </section>
       <section class="languages" id="languages">
         <h2>Languages</h2>

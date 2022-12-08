@@ -34,7 +34,8 @@ main {
   grid-area: main;
   background-color: white;
   min-height: 1000px;
-  padding-left: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 footer {
@@ -42,6 +43,7 @@ footer {
   grid-area: footer;
   background-color: #6EB5C0;
 }
+
 @media (max-width: 420px) {
   .grid {
     display: grid;
@@ -52,6 +54,7 @@ footer {
       "footer footer";
   }
 }
+
 /*************************** common styles *****************************************/
 h1,
 h2 {
@@ -68,33 +71,21 @@ h2 {
   padding-left: 10px;
   padding-right: 10px;
   box-shadow: 7px 5px 5px #dfb8ab;
+  letter-spacing: 5px;
 }
 
 ul {
   margin: 0px;
   padding: 0px;
-}
-
-.icons {
-  max-width: 30px;
-  max-height: 30px;
-}
-
-/********************************** header ***************************/
-header ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
   list-style: none;
 }
 
-header a {
-  font-size: 16px;
+a {
   font-family: 'Alegreya', sans-serif;
   text-decoration: none;
-  line-height: 50px;
-  color: #E2E8E4;
-  margin-left: 20px;
+  font-size: 18px;
+  color: #006C84;
+  margin-left: 10px;
 }
 
 a:hover {
@@ -102,28 +93,68 @@ a:hover {
   transition: 1s;
 }
 
-/********************************** aside ***************************/
-aside {
+.icons {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.slider {
+  width: 50%;
+  height: 7px;
+  background-color: #accdd253;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.level {
+  background-color: #00596d;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.ellipse {
+  width: 30px;
+  height: 30px;
+  background-color: #006C84;
+  border-radius: 15px;
+}
+
+.flex-column {
   display: flex;
   flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+/********************************** header ***************************/
+header ul {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+header a {
+  font-size: 16px;
+  line-height: 50px;
+  color: #E2E8E4;
+  margin-left: 20px;
+}
+
+/********************************** aside ***************************/
+aside {
   justify-content: space-around;
 }
 
-aside .profile-photo {
-  display: flex;
-  flex-direction: column;
+.profile-photo {
   align-items: center;
 }
 
-aside .profile-photo>img {
+.profile-photo>img {
   width: 70%;
   border-radius: 250px;
   border: 10px solid #FFCCBB;
-}
-
-aside .contacts {
-  display: flex;
-  flex-direction: column;
 }
 
 aside h2 {
@@ -131,46 +162,78 @@ aside h2 {
   margin-bottom: 30px;
 }
 
-aside .contacts li {
-  display: flex;
-  flex-direction: row;
+.contacts li {
   margin-left: 20px;
 }
-aside a {
-font-size: 18px;
-color: #006C84;
-text-decoration: none;
-margin-left: 10px;
-font-family: 'Alegreya', sans-serif;
-}
-aside .about-me {
-  display: flex;
-  flex-direction: column;
-}
-aside .about-me li {
-  display: flex;
-  flex-direction: row;
+
+.about-me li {
   font-size: 18px;
   font-family: 'Alegreya', sans-serif;
   color: #00596d;
   line-height: 30px;
   margin-left: 20px;
 }
-aside .about-me img {
+
+.about-me img {
   margin-right: 15px;
 }
+
 /*********************************** main *************************/
-main .profile > h1 {
+.profile>h1 {
   font-size: 30px;
   color: #00596d;
   font-style: italic;
   text-transform: uppercase;
   line-height: 50px;
-  border-bottom: 5px solid #00596d;
+  border-bottom: 3px solid #00596d;
+  border-radius: 5px;
+  letter-spacing: 10px;
 }
-main .profile > h3 {
+
+.profile>h3 {
   font-size: 18px;
   color: #00596d;
   line-height: 30px;
   margin: 0px;
+  border-bottom: 1px solid #00596d;
+}
+
+.skills ul {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  row-gap: 15px;
+  color: #00596d;
+}
+
+@media (max-width: 420px) {
+  .skills ul {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+
+.skills .level-html,
+.skills .level-trello {
+  width: 90%;
+}
+
+.skills .level-css,
+.skills .level-git {
+  width: 75%;
+}
+
+.skills .level-js {
+  width: 65%;
+}
+
+.skills .level-figma {
+  width: 70%;
+}
+
+.skills,
+.projects,
+.education {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #00596d;
 }
