@@ -22,12 +22,12 @@ html {
 /********************************** summary ***************************/
 header {
   grid-area: header;
-  background-color: #006c84c1;
+  background-color: #1e1f26;
 }
 
 aside {
   grid-area: aside;
-  background-color: #accdd253;
+  background-color: #d2e0f4;
   padding-top: 20px;
 }
 
@@ -38,9 +38,8 @@ main {
 }
 
 footer {
-  /* min-height: 200px; */
   grid-area: footer;
-  background-color: #6EB5C0;
+  background-color: #283655;
 }
 
 @media (max-width: 420px) {
@@ -59,81 +58,6 @@ footer {
 }
 
 /*************************** common styles *****************************************/
-h1,
-h2 {
-  font-size: 20px;
-  font-family: 'Alegreya', sans-serif;
-  display: inline-block;
-}
-
-h2 {
-  color: #00596d;
-  background-color: #FFCCBB;
-  border-radius: 35px;
-  line-height: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-shadow: 7px 5px 5px #dfb8ab;
-  letter-spacing: 5px;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-li {
-  font-size: 18px;
-  font-family: 'Alegreya', sans-serif;
-  color: #00596d;
-  line-height: 30px;
-}
-
-a,
-p {
-  font-family: 'Alegreya', sans-serif;
-  text-decoration: none;
-  font-size: 18px;
-  color: #006C84;
-  margin-left: 10px;
-}
-
-p {
-  margin: 0px;
-}
-
-a:hover {
-  color: #FFCCBB;
-  transition: 1s;
-}
-
-.icons {
-  max-width: 30px;
-  max-height: 30px;
-}
-
-.slider {
-  width: 50%;
-  height: 7px;
-  background-color: #accdd253;
-  border-radius: 5px;
-  align-self: center;
-}
-
-.level {
-  background-color: #00596d;
-  height: 100%;
-  border-radius: 5px;
-}
-
-.ellipse {
-  width: 15px;
-  height: 15px;
-  background-color: #006C84;
-  border-radius: 10px;
-}
-
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -144,19 +68,113 @@ a:hover {
   flex-direction: row;
 }
 
+h2 {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Alegreya', sans-serif;
+  font-size: 20px;
+  letter-spacing: 5px;
+  border-radius: 35px;
+  line-height: 30px;
+  color: #d2e0f4;
+  background-color: #1e1f26;
+  box-shadow: 7px 5px 5px #4d648d64;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Alegreya', sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  list-style: none;
+  color: #1e1f26;
+}
+
+a,
+p {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 18px;
+  color: #1e1f26;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.icons {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.slider {
+  align-self: center;
+  width: 50%;
+  height: 7px;
+  background-color: #d2e0f4;
+  border-radius: 5px;
+}
+
+.level {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #1e1f26;
+}
+
+.ellipse {
+  width: 15px;
+  height: 15px;
+  background-color: #1e1f26;
+  border-radius: 10px;
+}
+
 /********************************** header ***************************/
-header ul {
+/* header ul {
   flex-wrap: wrap;
   justify-content: flex-end;
-}
-
-header a {
+} */
+.dropbtn {
+  font-family: 'Alegreya', sans-serif;
+  background-color: #283655;
+  color: #d2e0f4;
+  padding: 16px;
   font-size: 16px;
-  line-height: 50px;
-  color: #E2E8E4;
-  margin-left: 20px;
+  border: none;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 20px 0px #1e1f26;
+  z-index: 1;
+}
+
+.menu a {
+  color: #1e1f26;
+  padding: 10px 15px;
+  display: block;
+  background-color: #d2e0f4;
+}
+
+a:hover {
+  color: #4d648d;
+  text-shadow: 0px 1px 2px #4d648d;
+  transition: 1s;
+}
+
+.dropdown:hover .menu {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #304268;
+  transition: 0.3s;
+}
 /********************************** aside ***************************/
 aside {
   justify-content: space-around;
@@ -168,8 +186,9 @@ aside {
 
 .profile-photo>img {
   width: 70%;
+  border: 10px solid #1e1f26;
   border-radius: 250px;
-  border: 10px solid #FFCCBB;
+  box-shadow: 0px 8px 20px 0px #1e1f26;
 }
 
 aside h2 {
@@ -188,34 +207,38 @@ aside h2 {
 
 /*********************************** main *************************/
 .profile>h1 {
+  display: inline-block;
+  font-family: 'Alegreya', sans-serif;
   font-size: 30px;
-  color: #00596d;
   font-style: italic;
   text-transform: uppercase;
   line-height: 50px;
-  border-bottom: 3px solid #00596d;
-  border-radius: 5px;
   letter-spacing: 10px;
+  color: #1e1f26;
+  text-shadow: 0px 0px 5px #4d648d;
+  border-radius: 5px;
+  border-bottom: 3px solid #1e1f26;
 }
 
 .profile>h3 {
+  font-family: 'Alegreya', sans-serif;
   font-size: 18px;
-  color: #00596d;
   line-height: 30px;
   margin: 0px;
-  border-bottom: 1px solid #00596d;
+  color: #1e1f26;
+  border-bottom: 1px solid #1e1f26;
 }
 
-.skills .skills-grid {
+.skills-conteiner {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
   row-gap: 15px;
-  color: #00596d;
+  color: #1e1f26;
 }
 
 @media (max-width: 420px) {
-  .skills .skills-grid {
+  .skills-conteiner {
     grid-template-columns: 1fr;
     row-gap: 10px;
   }
@@ -244,12 +267,13 @@ aside h2 {
 .code,
 .education {
   padding-bottom: 20px;
-  border-bottom: 1px solid #00596d;
+  border-bottom: 1px solid #1e1f26;
+
 }
 
 .code>p {
-  background-color: #accdd253;
-  text-shadow: 1px 4px 2px #FFCCBB;
+  background-color: #d2e0f4;
+  text-shadow: 0px 0px 1px #283655;
 }
 
 .languages-conteiner {
