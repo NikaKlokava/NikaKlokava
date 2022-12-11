@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -15,28 +15,28 @@
 </head>
 
 <body>
-  <div class="grid">
-    <header>
-      <div class="dropdown">
-        <button class="dropbtn">Navigation</button>
-        <nav>
-          <ul class="menu flex-row">
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#qualities">Qualities</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#code">Code</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#languages">Languages</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <aside>
-      <section class="profile-photo flex-column">
+  <header>
+    <nav>
+      <ul class="menu flex-row">
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#qualities">Qualities</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#languages">Languages</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="general-info flex-column">
+      <section class="profile flex-column">
+        <h1>Veranika Klokava</h1>
+        <h3>Juniour front-end developer</h3>
         <img src="assets/img/my_photo.jpg" alt="my_photo">
       </section>
-      <section class="contacts flex-column" id="contacts">
+      <section class="contacts" id="contacts">
         <h2>Contacts</h2>
         <ul>
           <li class="flex-row">
@@ -61,7 +61,7 @@
           </li>
         </ul>
       </section>
-      <section class="about-me flex-column" id="qualities">
+      <section class="about-me" id="qualities">
         <h2>About Me</h2>
         <ul>
           <li class="flex-row"><img class="icons" src="assets/svg/okey.svg" alt="okey">Responsible and disciplined;</li>
@@ -76,12 +76,8 @@
             knowledge;</li>
         </ul>
       </section>
-    </aside>
-    <main>
-      <section class="profile">
-        <h1>Veranika Klokava</h1>
-        <h3>Juniour front-end developer</h3>
-      </section>
+    </div>
+    <div class="ability-info flex-column">
       <section class="skills" id="skills">
         <h2>Skills</h2>
         <div class="skills-conteiner">
@@ -173,21 +169,21 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer>
-      <ul class="footer flex-row">
-        <li class="flex-row">
-          <img class="icons" src="assets/svg/github.svg" alt="github">
-          <a href="https://github.com/NikaKlokava" class="github">GitHub</a>
-        </li>
-        <li>
-          <a href="https://rs.school/js-stage0/"><img class="rsschool" src="assets/ico/rs_school_js.ico"
-              alt="rsschool"></a>
-        </li>
-        <li>2022</li>
-      </ul>
-    </footer>
-  </div>
+    </div>
+  </main>
+  <footer>
+    <ul class="footer flex-row">
+      <li class="flex-row">
+        <img class="icons" src="assets/svg/github.svg" alt="github">
+        <a href="https://github.com/NikaKlokava" class="github">GitHub</a>
+      </li>
+      <li>
+        <a href="https://rs.school/js-stage0/"><img class="rsschool" src="assets/ico/rs_school_js.ico"
+            alt="rsschool"></a>
+      </li>
+      <li>2022</li>
+    </ul>
+  </footer>
 </body>
 
 </html>
