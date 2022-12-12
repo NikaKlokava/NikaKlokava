@@ -12,6 +12,7 @@ html {
 
 /*==================================== template ====================================*/
 header {
+  width: 100%;
   background-color: #1e1f26;
 }
 
@@ -233,7 +234,7 @@ a:hover,
 }
 
 .profile>img {
-  width: 60%;
+  width: 70%;
   border: 10px solid #1e1f26;
   border-radius: 250px;
   box-shadow: 0px 8px 20px 0px #1e1f26;
