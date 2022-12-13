@@ -1,4 +1,4 @@
-### Hi there 👋
+### [CV](https://nikaklokava.github.io/NikaKlokava/) 
 
 <!--
 **NikaKlokava/NikaKlokava** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
