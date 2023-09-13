@@ -1,6 +1,7 @@
-### [CV](https://nikaklokava.github.io/NikaKlokava/) 
+<!--### [CV](https://nikaklokava.github.io/NikaKlokava/) -->
+###[CV VERANIKA KLOKAVA](https://github.com/NikaKlokava/NikaKlokava/files/12595089/cv.veranika.pdf)
+<!--[cv veranika.pdf](https://github.com/NikaKlokava/NikaKlokava/files/12595089/cv.veranika.pdf)
 
-<!--
 **NikaKlokava/NikaKlokava** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
